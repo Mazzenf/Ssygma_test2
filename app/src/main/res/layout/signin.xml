@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/brnd_id"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/open_sans"
+        android:text="SYGMA"
+        android:textColor="@color/icon"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/brnd_icon"
+        android:layout_width="180dp"
+        android:layout_height="156dp"
+        app:srcCompat="@drawable/car_syg" />
+
+    <TextView
+        android:id="@+id/motto_id"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Rental, Simplified"
+        android:textColor="@color/main"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hello_id"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Hello again!"
+        android:textColor="@color/main"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="15dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/signin_email_input"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="       Enter your email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="15dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/signin_password_input"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="       Enter your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="365dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/forgot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Forgot your password?" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/noacc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Don't have an account?" />
+
+        <TextView
+            android:id="@+id/signup_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:text="Sign up"
+            android:textColor="@color/icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/coninue_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="or continue as a " />
+
+        <TextView
+            android:id="@+id/guest_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="1dp"
+            android:text="Guest"
+            android:textColor="@color/main" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

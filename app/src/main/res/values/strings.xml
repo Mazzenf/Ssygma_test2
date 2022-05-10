@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sygma_test</string>
+
+    <string name="dob"><u>Select date of birth</u></string>
+
+    <string name="pickupreturn"><u>Select Pickup &amp; Return dates</u></string>
+
+</resources>
