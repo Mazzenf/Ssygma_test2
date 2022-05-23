@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "246873878253",
+    "firebase_url": "https://sygma-39dee-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sygma-39dee",
+    "storage_bucket": "sygma-39dee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246873878253:android:92977a8b11a63c5713a6e4",
+        "android_client_info": {
+          "package_name": "syg.gprj.ssygma_test2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246873878253-fb9alqm6jbtk3mfq7eupgmksd9jcfkih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrPFZS_rI7fJCEd6ud1ibcuZfeL13rLpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246873878253-fb9alqm6jbtk3mfq7eupgmksd9jcfkih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
