@@ -5,4 +5,12 @@
 
     <string name="pickupreturn"><u>Select Pickup &amp; Return dates</u></string>
 
+    <string-array name="cities_spinner">
+        <item>Amman</item>
+        <item>Irbid</item>
+        <item>Jarash</item>
+
+    </string-array>
+
+
 </resources>

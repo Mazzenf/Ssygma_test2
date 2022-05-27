@@ -21,7 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".SignInController" />
+        <activity android:name=".SignUpController" />
+        <activity android:name=".DiscoverController" />
+        <activity android:name=".ForgotPasswordController" />
+        <activity android:name=".BrandsTypesController" />
     </application>
 
 
