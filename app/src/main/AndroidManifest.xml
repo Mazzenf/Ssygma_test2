@@ -26,6 +26,11 @@
         <activity android:name=".DiscoverController" />
         <activity android:name=".ForgotPasswordController" />
         <activity android:name=".BrandsTypesController" />
+        <activity android:name=".AboutController" />
+        <activity android:name=".SupportController" />
+        <activity android:name=".OrdersController" />
+        <activity android:name=".SelectedController" />
+        <activity android:name=".OrderController" />
     </application>
 
 

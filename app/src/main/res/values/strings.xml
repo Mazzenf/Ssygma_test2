@@ -5,12 +5,25 @@
 
     <string name="pickupreturn"><u>Select Pickup &amp; Return dates</u></string>
 
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
     <string-array name="cities_spinner">
         <item>Amman</item>
         <item>Irbid</item>
         <item>Jarash</item>
 
     </string-array>
+
+    <string-array name="colors_spinner">
+        <item>Black</item>
+        <item>White</item>
+        <item>Silver</item>
+    </string-array>
+
+
 
 
 </resources>

@@ -33,20 +33,25 @@
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/drawable/side_menu_ic.xml" value="0.175" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/drawable/successgift.xml" value="0.175" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/drawable/trans_button.xml" value="0.175" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/about.xml" value="0.3138888888888889" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/activity_main.xml" value="0.31431159420289856" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/brand_types.xml" value="0.33" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/car_view.xml" value="0.3541666666666667" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/checkable_spinner_item.xml" value="0.26484375" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/checkout.xml" value="0.31431159420289856" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/contact_support.xml" value="0.31431159420289856" />
-        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/discover.xml" value="0.12704918032786885" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/discover.xml" value="0.25" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/docs_layout.xml" value="0.26484375" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/filters.xml" value="0.33" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/forgot_password.xml" value="0.33" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/header.xml" value="0.3138888888888889" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/layout_checkout.xml" value="0.31431159420289856" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/layout_options.xml" value="0.31431159420289856" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/nav_header.xml" value="0.3148148148148148" />
-        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/order.xml" value="0.33" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/order.xml" value="0.1" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/ordered_deliver.xml" value="0.33" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/ordered_pickup.xml" value="0.33" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/orders.xml" value="0.3138888888888889" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/selected_car.xml" value="0.33" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/signin.xml" value="0.3023255813953488" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/signup.xml" value="0.25" />
@@ -56,6 +61,7 @@
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/vehicle_item.xml" value="0.3148148148148148" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/layout/view123.xml" value="0.5" />
         <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/menu/drawe_menu.xml" value="0.29814814814814816" />
+        <entry key="..\:/Users/mazen/AndroidStudioProjects/Ssygma_test2/app/src/main/res/menu/main_menu.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -2,18 +2,31 @@ package syg.gprj.ssygma_test2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
-public class DiscoverController extends AppCompatActivity implements View.OnClickListener
+import com.google.android.material.navigation.NavigationView;
+
+public class DiscoverController extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener
 {
     
     private CardView card_audi, card_bmw, card_chevy, card_chrysler, card_dodge, card_ford, card_genesis,
             card_gmc, card_honda, card_hyundai, card_kia, card_mazda, card_mercedess, card_nissan, card_toyota,
             card_volkswagen;
+
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
+
     
     
     @Override
@@ -21,7 +34,24 @@ public class DiscoverController extends AppCompatActivity implements View.OnClic
     {
         super.onCreate(savedInstance);
         setContentView(R.layout.discover);
-        
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+
+        navigationView.bringToFront();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
+
         card_audi = (CardView) findViewById(R.id.card_audi);
         card_bmw = (CardView) findViewById(R.id.card_bmw);
         card_chevy = (CardView) findViewById(R.id.card_chevy);
@@ -100,7 +130,7 @@ public class DiscoverController extends AppCompatActivity implements View.OnClic
                 break;
 
             case R.id.card_gmc:
-                cardClick("gmc");
+                cardClick("GMC");
                 Toast.makeText(this, "Gmc clicked", Toast.LENGTH_SHORT).show();
                 break;
 
@@ -158,5 +188,47 @@ public class DiscoverController extends AppCompatActivity implements View.OnClic
         startActivity(intent1);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START))
+        {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else
+        {
+            super.onBackPressed();
+        }
 
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item)
+    {
+
+        switch (item.getItemId())
+        {
+            case R.id.itemAbout:
+                Intent intent = new Intent(this, AboutController.class);
+                startActivity(intent);
+                break;
+
+            case R.id.itemSupport:
+                 intent = new Intent(this, SupportController.class);
+                 startActivity(intent);
+                 break;
+                 
+            case R.id.itemOrders:
+                intent = new Intent(this, OrdersController.class);
+                startActivity(intent);
+                break;
+
+            case R.id.itemLogOut:
+                Toast.makeText(this, "LOGOUT CLICKED", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
 }

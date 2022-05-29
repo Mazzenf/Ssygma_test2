@@ -17,14 +17,19 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
 {
 
+    private RecyclerViewClickListener mlistener;
+
     Context context;
 
     ArrayList<Vehicles> list;
 
-    public MyAdapter(Context context, ArrayList<Vehicles> list)
+
+
+    public MyAdapter(Context context, ArrayList<Vehicles> list, RecyclerViewClickListener mlistener)
     {
         this.context = context;
         this.list = list;
+        this.mlistener=mlistener;
     }
 
     @NonNull
@@ -32,7 +37,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         View v = LayoutInflater.from(context).inflate(R.layout.vehicle_item,parent,false);
-        return new MyViewHolder(v);
+        return new MyViewHolder(v,mlistener);
     }
 
     @Override
@@ -55,7 +60,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
         holder.v_price.setText(p2);
         holder.v_capacity.setText(c2);
 
-        Picasso.with(context)
+        Picasso.get()
                 .load(vehicles.getVehicle_image())
                 .fit()
                 .into(holder.carView);
@@ -68,15 +73,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
         return list.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
+
+        private RecyclerViewClickListener listener;
 
         TextView v_model, v_make, v_capacity, v_price;
         ImageView carView;
 
-        public MyViewHolder(@NonNull View itemView)
+        public MyViewHolder(@NonNull View itemView, RecyclerViewClickListener listener)
         {
             super(itemView);
+
+            this.listener = listener;
+
 
             v_model = itemView.findViewById(R.id.brands_types_vehicle_model);
             v_make = itemView.findViewById(R.id.brands_types_vehicle_make);
@@ -85,7 +95,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
 
             carView = itemView.findViewById(R.id.brands_types_vehicle_image);
 
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view)
+        {
+            listener.onCardClick(view, getAdapterPosition());
+        }
+    }
+
+    public interface RecyclerViewClickListener
+    {
+        void onCardClick (View v, int position);
     }
 
 }

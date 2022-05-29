@@ -2,6 +2,7 @@ package syg.gprj.ssygma_test2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -20,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 
-public class BrandsTypesController extends AppCompatActivity
+public class BrandsTypesController extends AppCompatActivity implements MyAdapter.RecyclerViewClickListener
 {
 
 
@@ -30,6 +31,8 @@ public class BrandsTypesController extends AppCompatActivity
     ArrayList<Vehicles> list;
     ImageView topImage, botImage;
     String topName;
+
+    MyAdapter.RecyclerViewClickListener listener;
 
 
 
@@ -46,14 +49,15 @@ public class BrandsTypesController extends AppCompatActivity
         Intent incomingIntent = getIntent();
         String brand = incomingIntent.getStringExtra("manuf");
 
-        topName = "ic_" + brand;
+
+        topName = "ic_" + brand.toLowerCase();
 
         recyclerView = findViewById(R.id.vehicleList);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list= new ArrayList<>();
-        myAdapter = new MyAdapter(this,list);
+        myAdapter = new MyAdapter(this,list,this);
 
 
         database = FirebaseDatabase.getInstance().getReference();
@@ -77,6 +81,7 @@ public class BrandsTypesController extends AppCompatActivity
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren())
                 {
+
                     Vehicles vehicle1 = dataSnapshot.getValue(Vehicles.class);
                     list.add(vehicle1);
                 }
@@ -100,6 +105,48 @@ public class BrandsTypesController extends AppCompatActivity
 
     }
 
+
+//    private void setOnClickListener ()
+//    {
+//        listener = new MyAdapter.RecyclerViewClickListener()
+//        {
+//            @Override
+//            public void onCardClick(View v, int position) {
+//
+//            }
+//
+//            @Override
+//            public void onClick(View v, int position)
+//            {
+//                Intent intent = new Intent(BrandsTypesController.this, SelectedController.class);
+//
+//                intent.putExtra("manuf", list.get(position).getManufacturer());
+//                intent.putExtra("make", list.get(position).getMake());
+//                intent.putExtra("model", list.get(position).getModel());
+//                intent.putExtra("price", list.get(position).getStart_price());
+//                intent.putExtra("type", list.get(position).getType());
+//            }
+//        };
+//    }
+
+    @Override
+    public void onCardClick(View v, int position)
+    {
+        Intent intent = new Intent(this, SelectedController.class);
+
+        Long model = list.get(position).getModel();
+        Long price = list.get(position).getStart_price();
+
+        intent.putExtra("manuf", list.get(position).getManufacturer());
+        intent.putExtra("make", list.get(position).getMake());
+        intent.putExtra("model",model );
+        intent.putExtra("price", price );
+        intent.putExtra("type", list.get(position).getType());
+        intent.putExtra("image", list.get(position).getVehicle_image());
+
+        startActivity(intent);
+
+    }
 
 //
 //    public void readData ()

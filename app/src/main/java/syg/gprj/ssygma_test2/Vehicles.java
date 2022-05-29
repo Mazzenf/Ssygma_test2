@@ -2,14 +2,12 @@ package syg.gprj.ssygma_test2;
 
 public class Vehicles
 {
-    private String manufacturer, make, vehicle_image;
+    private String manufacturer, make, vehicle_image, color, type;
     long model, start_price, capacity;
-
 
 
     public Vehicles()
     {
-
     }
 
     public String getVehicle_image() {
@@ -18,6 +16,14 @@ public class Vehicles
 
     public void setVehicle_image(String vehicle_image) {
         this.vehicle_image = vehicle_image;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getManufacturer() {
@@ -59,4 +65,14 @@ public class Vehicles
     public void setCapacity(long capacity) {
         this.capacity = capacity;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
 }
