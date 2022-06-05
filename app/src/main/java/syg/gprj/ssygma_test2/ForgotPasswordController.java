@@ -43,7 +43,7 @@ public class ForgotPasswordController extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(ForgotPasswordController.this, SignInController.class);
+                finish();
             }
         });
 

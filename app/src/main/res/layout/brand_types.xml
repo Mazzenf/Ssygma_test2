@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/customborder2"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/brandsTypesBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+
+            app:srcCompat="@drawable/backbtn" />
+
+        <ImageView
+            android:id="@+id/brands_types_top_image"
+            android:layout_width="wrap_content"
+            android:layout_height="198dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_bmw" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vehicleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+    
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/brands_types_vehicle_image"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:srcCompat="@drawable/bmw_530_2021" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/brands_types_vehicle_model"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/open_sans"-->
+<!--                android:text="2021"-->
+<!--                android:textColor="@color/main"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/brands_types_vehicle_make"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:fontFamily="@font/open_sans"-->
+<!--                android:text="530"-->
+<!--                android:textColor="@color/main"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/brands_types_vehicle_capacity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:fontFamily="@font/open_sans"-->
+<!--                android:text="Fits: 5"-->
+<!--                android:textColor="@color/main"-->
+<!--                android:textSize="18sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/brands_types_vehicle_price"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="25dp"-->
+<!--                android:fontFamily="@font/open_sans"-->
+<!--                android:text="300 JOD"-->
+<!--                android:textColor="@color/main"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/brands_types_deliver_type"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="22dp"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:background="@drawable/customtext"-->
+<!--                android:text="Free delivery"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="15sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <View-->
+<!--        android:id="@+id/view3"-->
+<!--        android:layout_width="390dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@android:color/darker_gray" />-->
+
+
+</LinearLayout>

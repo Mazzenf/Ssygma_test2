@@ -209,12 +209,13 @@ public class DiscoverController extends AppCompatActivity implements View.OnClic
         switch (item.getItemId())
         {
             case R.id.itemAbout:
-                Intent intent = new Intent(this, AboutController.class);
-                startActivity(intent);
-                break;
+
+             Intent intent = new Intent(this, SupportController.class);
+             startActivity(intent);
+             break;
 
             case R.id.itemSupport:
-                 intent = new Intent(this, SupportController.class);
+                 intent = new Intent(this, AboutController.class);
                  startActivity(intent);
                  break;
                  

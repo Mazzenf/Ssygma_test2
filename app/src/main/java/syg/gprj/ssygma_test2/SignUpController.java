@@ -124,7 +124,7 @@ public class SignUpController extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.signupBack:
-                 intent = new Intent(this, SignInController.class);
+                 finish();
                  break;
 
         }

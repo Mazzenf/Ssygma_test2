@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/open_sans"
+        android:text="SYGMA"
+        android:textColor="@color/main"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="231dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/successmark_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans"
+        android:text="Order was successful"
+        android:textColor="@color/main"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Check the status of your order in the &quot;Orders&quot; section"
+        android:textAlignment="center"
+        android:textColor="@color/main"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/success_continue_btn"
+        android:layout_width="365dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="35dp"
+        android:text="Continue Browsing" />
+
+    <TextView
+        android:id="@+id/success_orders_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Go to orders >"
+        android:textStyle="bold"
+        android:textColor="@color/icon"
+        android:textSize="14sp" />
+
+</LinearLayout>

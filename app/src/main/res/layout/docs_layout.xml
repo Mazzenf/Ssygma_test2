@@ -1,5 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/IDInput"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Enter Your ID Number" />
+
+    <ImageView
+        android:id="@+id/cameraView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Select license Picture" />
+
+    <Button
+        android:id="@+id/docsConfirm"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+
+</LinearLayout>

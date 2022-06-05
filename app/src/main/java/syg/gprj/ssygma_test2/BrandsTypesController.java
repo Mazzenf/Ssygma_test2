@@ -29,7 +29,7 @@ public class BrandsTypesController extends AppCompatActivity implements MyAdapte
     DatabaseReference database;
     MyAdapter myAdapter;
     ArrayList<Vehicles> list;
-    ImageView topImage, botImage;
+    ImageView topImage, backBtn;
     String topName;
 
     MyAdapter.RecyclerViewClickListener listener;
@@ -60,16 +60,15 @@ public class BrandsTypesController extends AppCompatActivity implements MyAdapte
         myAdapter = new MyAdapter(this,list,this);
 
 
-        database = FirebaseDatabase.getInstance().getReference();
+
+        backBtn = (ImageView) findViewById(R.id.brandsTypesBackBtn);
 
         topImage = (ImageView) findViewById(R.id.brands_types_top_image);
         topImage.setImageResource(getResources().getIdentifier(topName,"drawable","syg.gprj.ssygma_test2"));
 
+
+        database = FirebaseDatabase.getInstance().getReference();
         Query q1 = database.child("vehicles").orderByChild("manufacturer").equalTo(brand);
-
-
-
-
 
         recyclerView.setAdapter(myAdapter);
 
@@ -96,38 +95,14 @@ public class BrandsTypesController extends AppCompatActivity implements MyAdapte
             }
         });
 
-
-
-
-
-
-
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
-
-
-//    private void setOnClickListener ()
-//    {
-//        listener = new MyAdapter.RecyclerViewClickListener()
-//        {
-//            @Override
-//            public void onCardClick(View v, int position) {
-//
-//            }
-//
-//            @Override
-//            public void onClick(View v, int position)
-//            {
-//                Intent intent = new Intent(BrandsTypesController.this, SelectedController.class);
-//
-//                intent.putExtra("manuf", list.get(position).getManufacturer());
-//                intent.putExtra("make", list.get(position).getMake());
-//                intent.putExtra("model", list.get(position).getModel());
-//                intent.putExtra("price", list.get(position).getStart_price());
-//                intent.putExtra("type", list.get(position).getType());
-//            }
-//        };
-//    }
 
     @Override
     public void onCardClick(View v, int position)
